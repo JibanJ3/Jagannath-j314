@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lord Jagannath Portfolio</title>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+body {
+    scroll-behavior: smooth;
+}
+
+section {
+    padding: 60px 20px;
+}
+
+.navbar {
+    background: #111;
+}
+
+.navbar a {
+    color: white !important;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+
+audio {
+    width: 100%;
+    margin-top: 10px;
+}
+/* GLOBAL BODY STYLE */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f8f9fa;
+}
+
+/* 🌟 HOVER FOR ALL TEXT */
+p, h1, h2, h3, h4, h5, li {
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+p:hover, h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, li:hover {
+    color: #d4a017;
+    transform: scale(1.02);
+}
+
+/* 🌟 HOVER CARDS */
+.card {
+    transition: 0.4s;
+    border-radius: 12px;
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    background: #fff7e6;
+}
+
+/* 🌟 HOVER BUTTONS */
+button, .btn {
+    transition: 0.3s;
+}
+
+button:hover, .btn:hover {
+    transform: scale(1.08);
+    background: #d4a017 !important;
+    color: white !important;
+}
+
+/* 🌟 HOVER NAV LINKS */
+.nav-link {
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #ffd700 !important;
+    letter-spacing: 1px;
+}
+
+/* 🌟 IMAGE HOVER */
+img {
+    transition: 0.4s;
+}
+
+img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
+/* 🌟 AUDIO HOVER EFFECT (CARD STYLE) */
+audio {
+    transition: 0.3s;
+}
+
+audio:hover {
+    transform: scale(1.03);
+}
+<style>
+
+/* GLOBAL TEXT HOVER (including lyrics) */
+p, h1, h2, h3, h4, h5, li, pre, span, div {
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/* Hover effect */
+p:hover, h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, li:hover, pre:hover {
+    color: #d4a017;
+    transform: scale(1.02);
+}
+
+/* 🌟 SPECIAL LYRICS HOVER (better effect for pre) */
+pre {
+    transition: 0.3s;
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+pre:hover {
+    background: #fff7e6;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transform: scale(1.02);
+    color: #b8860b;
+}
+
+/* Card hover */
+.card {
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Button hover */
+button, .btn {
+    transition: 0.3s;
+}
+
+button:hover, .btn:hover {
+    transform: scale(1.08);
+    background: #d4a017 !important;
+    color: white !important;
+}
+
+/* Image hover */
+img {
+    transition: 0.4s;
+}
+
+img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+<style>
+
+/* =======================
+   BASIC PAGE STYLE
+======================= */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f8f9fa;
+    scroll-behavior: smooth;
+    animation: fadeInPage 1s ease-in-out;
+}
+
+@keyframes fadeInPage {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* =======================
+   NAVBAR
+======================= */
+.navbar {
+    background: rgba(0,0,0,0.75);
+    backdrop-filter: blur(10px);
+    transition: 0.4s;
+}
+
+.navbar:hover {
+    background: rgba(0,0,0,0.9);
+}
+
+.nav-link {
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #ffd700 !important;
+    letter-spacing: 1px;
+}
+
+/* =======================
+   SECTION STYLE
+======================= */
+section {
+    padding: 60px 20px;
+    animation: sectionFade 1s ease-in-out;
+}
+
+@keyframes sectionFade {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* =======================
+   TITLES
+======================= */
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+    animation: glowText 2s infinite alternate;
+}
+
+@keyframes glowText {
+    from { text-shadow: 0 0 5px #d4a017; }
+    to { text-shadow: 0 0 20px #ffd700; }
+}
+
+/* =======================
+   CARDS
+======================= */
+.card {
+    border-radius: 12px;
+    transition: 0.4s;
+    animation: floatCard 4s ease-in-out infinite;
+}
+
+@keyframes floatCard {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-6px); }
+    100% { transform: translateY(0px); }
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    background: #fff7e6;
+}
+
+/* =======================
+   BUTTONS
+======================= */
+button, .btn {
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+button:hover, .btn:hover {
+    transform: scale(1.08);
+    background: #d4a017 !important;
+    color: white !important;
+}
+
+/* ripple effect */
+button::after, .btn::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(255,255,255,0.2);
+    transition: 0.4s;
+}
+
+button:hover::after, .btn:hover::after {
+    width: 100%;
+}
+
+/* =======================
+   TEXT HOVER
+======================= */
+p, h1, h2, h3, h4, h5, li, pre, span, div {
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+p:hover, h1:hover, h2:hover, h3:hover, h4:hover, h5:hover, li:hover, pre:hover {
+    color: #d4a017;
+    transform: scale(1.02);
+}
+
+/* =======================
+   IMAGES
+======================= */
+img {
+    transition: 0.4s;
+}
+
+img:hover {
+    transform: scale(1.05) rotate(0.5deg);
+    filter: brightness(1.1);
+}
+
+/* =======================
+   CAROUSEL IMAGE ZOOM
+======================= */
+.carousel-item img {
+    animation: zoomSlow 10s infinite alternate ease-in-out;
+}
+
+@keyframes zoomSlow {
+    from { transform: scale(1); }
+    to { transform: scale(1.08); }
+}
+
+/* =======================
+   AUDIO
+======================= */
+audio {
+    transition: 0.3s;
+    width: 100%;
+}
+
+audio:hover {
+    transform: scale(1.03);
+}
+
+/* =======================
+   LYRICS BOX
+======================= */
+pre {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+pre:hover {
+    background: #fff7e6;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    color: #b8860b;
+    transform: scale(1.02);
+}
+
+/* =======================
+   SMOOTH SCROLL
+======================= */
+html {
+    scroll-behavior: smooth;
+}
+
+</style>
+
+</style>
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+<div class="container">
+    <a class="navbar-brand" href="#">Jagannath</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#history" title="History of Lord Jagannath">History</a></li>
+            <li class="nav-item"><a class="nav-link" href="#rathyatra" title="Grand Rath Yatra Festival">Rath Yatra</a></li>
+            <li class="nav-item"><a class="nav-link" href="#flags" title="Sacred Flags of Temple">Flags</a></li>
+            <li class="nav-item"><a class="nav-link" href="#quotes" title="Divine Quotes">Quotes</a></li>
+            <li class="nav-item"><a class="nav-link" href="#songs" title="Bhajans & Songs">Songs</a></li>
+            <li class="nav-item"><a class="nav-link" href="#lyrics" title="Divine Lyrics">Lyrics</a></li>
+        </ul>
+    </div>
+</div>
+</nav>
+
+<!-- HERO CAROUSEL -->
+<div id="heroCarousel" class="carousel slide mt-5 pt-4" data-bs-ride="carousel">
+
+<div class="carousel-indicators">
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+</div>
+
+<div class="carousel-inner">
+
+    <div class="carousel-item active">
+        <img src="https://i.pinimg.com/1200x/ed/34/32/ed34320648c322c9f6a59a6a4db39d89.jpg" class="d-block w-100" style="height:90vh; object-fit:cover;">
+        <div class="carousel-caption">
+            <h2>Lost in His Eyes</h2>
+        </div>
+    </div>
+
+    <div class="carousel-item">
+        <img src="https://i.pinimg.com/1200x/7f/9c/d3/7f9cd3269ea9a9c0c890fc433a8112ae.jpg" class="d-block w-100" style="height:90vh; object-fit:cover;">
+        <div class="carousel-caption">
+            <h2>Endless Compassion Eyes</h2>
+        </div>
+    </div>
+
+    <div class="carousel-item">
+        <img src="https://i.pinimg.com/1200x/96/dd/a2/96dda2d276ef2530ef164f0d14a3c490.jpg" class="d-block w-100" style="height:90vh; object-fit:cover;">
+        <div class="carousel-caption">
+            <h2>Heart in His Eyes</h2>
+        </div>
+    </div>
+
+</div>
+
+<button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+</button>
+
+<button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+</button>
+
+</div>
+
+<!-- HISTORY -->
+<section id="history">
+<h2 class="section-title">History of Lord Jagannath</h2>
+<p class="text-center">
+Lord Jagannath is a very important form of Lord Vishnu, mainly worshipped in Puri, Odisha, India. According to history, the worship of Jagannath began many centuries ago and became widely known during the time of King Indradyumna, who is believed to have built the famous Jagannath Temple in Puri. The idol of Lord Jagannath, along with his brother Balabhadra and sister Subhadra, is unique because it is made of wood and is replaced every 12 to 19 years in a sacred ritual called “Nabakalebara.” The Jagannath Temple is one of the four holy Char Dham pilgrimage sites in India, and it is especially famous for the grand Rath Yatra festival, where the deities are taken out in huge chariots to give blessings to devotees. The tradition of Jagannath worship represents unity, devotion, and equality, as people from all backgrounds come together to serve the Lord.
+</p>
+</section>
+
+<!-- RATH YATRA -->
+<section id="rathyatra" class="bg-light">
+<h2 class="section-title">Rath Yatra</h2>
+<p class="text-center">
+Rath Yatra is one of the most famous festivals dedicated to Lord Jagannath, celebrated every year in Puri, Odisha. In this festival, Lord Jagannath, along with his elder brother Balabhadra and sister Subhadra, is taken out of the Jagannath Temple and placed on huge, beautifully decorated wooden chariots. These chariots are then pulled by thousands of devotees through the streets to the Gundicha Temple, which is considered the Lord’s garden house. The journey symbolizes Lord Jagannath coming out of the temple to give blessings to all people, without any discrimination. It is believed that even touching the ropes of the chariot brings great blessings and removes sins. Rath Yatra shows unity, devotion, and the idea that God belongs to everyone.
+</section>
+
+<!-- FLAGS -->
+<section id="flags">
+<h2 class="section-title">Temple Flags</h2>
+<div class="text-center">
+    <p title="Flag always points opposite to wind direction">
+       The flag of the Jagannath Temple in Puri is very unique and considered sacred by devotees. It is placed on top of the temple’s main dome and is changed every day by a priest who climbs the temple without any safety equipment, which itself is seen as a divine tradition. One of the most interesting beliefs is that the flag always flutters in the opposite direction of the wind, which many people consider a spiritual mystery. The flag represents victory, protection, and the presence of Lord Jagannath in the temple. It is an important symbol of faith and devotion for millions of devotees visiting Puri.
+    </p>
+</div>
+</section>
+
+<!-- QUOTES -->
+<section id="quotes" class="bg-light">
+<h2 class="section-title">Divine Quotes</h2>
+
+<div class="container text-center">
+
+    <p title="Faith is power">“Where faith exists, miracles happen.”</p>
+
+    <p title="Devotion leads to peace">“Devotion is the path to inner peace.”</p>
+
+    <p title="Lord Jagannath blessing">“When you believe in Jagannath, you are never alone.”</p>
+
+    <p title="Divine protection">“In the shelter of Lord Jagannath, fear disappears.”</p>
+
+    <p title="True happiness">“True happiness begins with devotion.”</p>
+
+    <p title="Faith and surrender">“Surrender with faith, and everything becomes possible.”</p>
+
+    <p title="Spiritual path">“Devotion is the bridge between the soul and the divine.”</p>
+
+    <p title="Peace and truth">“Lord Jagannath guides every soul toward peace and truth.”</p>
+
+</div>
+</section>
+
+<!-- SONGS -->
+<section id="songs">
+<h2 class="section-title">Bhajans & Songs</h2>
+
+<div class="row">
+
+<div class="col-md-4">
+<div class="card p-3 text-center" title="Jagannath Ashtakam Bhajan">
+<h5>Gotia Jaga</h5>
+<audio controls>
+    <source src="./Gotie Jaga - MrinmayMS- OdiaBhajan Rap Song(OdiaBazar.In).mp3" type="audio/mpeg">
+</audio>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card p-3 text-center" title="Jai Jagannath Chant">
+<h5>Hey Jaga</h5>
+<audio controls>
+    <source src="./Hey-Jaga-(OdiaFresh.Com).mp3" type="audio/mpeg">
+</audio>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card p-3 text-center" title="Divine Bhajan">
+<h5>Mana Para Re</h5>
+<audio controls>
+    <source src="./Mana-Parare-(OdiaFresh.Com).mp3" type="audio/mpeg">
+</audio>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- LYRICS -->
+<section id="lyrics" class="bg-light">
+<h2 class="section-title">Lyrics</h2>
+
+<div class="container text-center">
+<pre title="Sacred lyrics of devotion">
+Mun lobhi tu mo lobha
+Mun garbhi tu mo garbha
+Ragi mun tuma raga
+Bhogi mun tuma bhoga
+Mo deharu jibana phedi to deha re jodi de
+
+Hey jaga to kala andhara re mate misei de
+{This bhajan expresses complete devotion and surrender to Lord Jagannath. The devotee says that whatever he is—his desires, ego, anger, and enjoyment—all belong to the <br> Lord, and nothing is truly his own. Every emotion and feeling is seen as a part of the divine creation of Jagannath. In the end, the devotee deeply prays to the Lord <br>to take his life and merge him into the divine form, showing the wish to become one with Jagannath. The line “Hey Jaga to kala andhara re mate misei de” reflects <br> a heartfelt request to dissolve the self into the mysterious and infinite divine presence of the Lord.}
+
+</pre>
+<pre title="Sacred lyrics of devotion">
+Jebe Mo akhi kholi thaye tate hi tate pai thaye
+jaga to bina ei jiban ta mate adha kain lagi thaye
+hatha badhei de dukho mo kolia ne jaga de to pakhe re
+jaga re mo jaga re to hasa tk dekhibaku mo mana jhure 
+
+{When I open my eyes, I find only you everywhere. Without you, O Jagannath, my life feels incomplete and half-empty. Why does life feel so incomplete without you? <br>Please extend your hand and take away all my sorrows into your embrace. Give me a place near you, O Jagannath, my Lord. O Jagannath, my dear Lord, my heart longs <br>just to see your gentle smile.}
+</pre>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center p-3 bg-dark text-white">
+© 2026 Lord Jagannath 
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
